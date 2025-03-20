@@ -20,26 +20,25 @@ Here we can get the user from db using username and return UserDetails object re
 We should use a strong password encoder for storing our users and the same in the DaoAuthenticationProvider
 # JWT [JSON Web Token]
 Dependencies:
-
-          <dependency>
-  	<groupId>io.jsonwebtoken</groupId>
-  	<artifactId>jjwt-api</artifactId>
-  	<version>0.11.2</version>
-  </dependency>
-
-  <dependency>
-  	<groupId>io.jsonwebtoken</groupId>
-  	<artifactId>jjwt-impl</artifactId>
-  	<version>0.11.2</version>
-  	<scope>runtime</scope>
-  </dependency>
-
-  <dependency>
-  	<groupId>io.jsonwebtoken</groupId>
-  	<artifactId>jjwt-jackson</artifactId>
-  	<version>0.11.2</version>
-  	<scope>runtime</scope>
-  </dependency>
+              
+	      <dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.2</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.2</version>
+			<scope>runtime</scope>
+		</dependency>
+  
 Now we will use the AuthenticationManage which behind the seen will use the AuthenticationProvider
 
 Have 3 components Header,Payload,Signature
